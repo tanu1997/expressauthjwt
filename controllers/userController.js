@@ -106,7 +106,7 @@ class UserController
             {
                 const salt = await bcrypt.genSalt(10)
                 const newHashPassword = await bcrypt.hash(password,salt)
-                console.log(req.user)
+                // console.log(req.user)
                 res.send({"status":"success","message":"Password Changed Successfully"})
             }
         }
